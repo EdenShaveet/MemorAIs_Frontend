@@ -204,30 +204,12 @@
         </div>
     </div>
 
-    <!-- Much of the following code learned from https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos
-    //and https://stackoverflow.com/questions/33975431/how-can-i-capture-an-image-via-the-users-webcam-using-getusermedia -->
-
-    <!-- <video id="video" autoplay playsinline></video>
-    <button id="takePic_button">Take Photo</button>
-    <img id="takePic_img" alt="Picture from Camera" style="display: none;"> -->
-
     <script>
-        //Access camera
-        // videoElement = document.getElementById('video');
-        // if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        //     navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-        //         videoElement.srcObject = stream;
-        //         videoElement.style.transform = 'scaleX(-1)';
-        //     });
-        // }
+
         takePic_button = document.getElementById('takePic_button');
         takePic_img = document.getElementById('takePic_img');
         canvas = document.createElement('canvas');
 
-        // form = document.getElementById('boom')
-        // form.submit(function (e) {
-        //     e.preventDefault();
-        // })
         upload_button = document.getElementById('upload-file');
 
         const uploadForm = document.getElementById('upload-form');
@@ -280,34 +262,6 @@
         });
 
         download_button = document.getElementById('download_button');
-        // upload_button.addEventListener('click', function() {
-        //     file = document.getElementById('file')
-        //     // print('FFF', file)
-        //     // ____
-        //     var downloadLink = document.createElement('a');
-        //     var fd = new FormData();
-        //     fd.append('image', file /*, optional filename */)
-        //     var req = fetch('https://7358-209-2-229-214.ngrok-free.app/analyze', {
-        //         method: 'post',
-        //         body: fd /* or aFile[0]*/
-        //     }); // returns a promise
-
-        //     req.then(function(response) {
-        //     // returns status + response headers
-        //     // but not yet the body, 
-        //     // for that call `response[text() || json() || arrayBuffer()]` <-- also promise
-        //         if (res.ok) {
-        //             // status code was 200-299
-        //             downloadLink.href = 'https://7358-209-2-229-214.ngrok-free.app/test';
-        //             downloadLink.download = 'new_calendar.ics';
-        //             downloadLink.click();
-        //         } else {
-        //             // status was something else
-        //         }
-        //     }, function(error) {
-        //     console.error('failed due to network error or cross domain')
-        //     })
-        // });
         
     </script>
 </body>
